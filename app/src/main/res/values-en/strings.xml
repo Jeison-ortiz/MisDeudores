@@ -21,6 +21,17 @@
     <string name="study">Study</string>
     <string name="dia_de_nacimiento">Birthday</string>
     <string name="fecha">Date</string>
+    <string name="digite_nombre">Nombre</string>
+    <string name="Deuda">cantidad</string>
+    <string name="Crear">crear</string>
+    <string name="Cantidad">cantidad</string>
+    <string name="Guardar">guardar</string>
+    <string name="buscar">Buscar</string>
+    <string name="crear">Crear</string>
+    <string name="Actualizar">actualizar</string>
+    <string name="Borrar">borrar</string>
+    <string name="lista">Lista</string>
+    <string name="sesion">Iniciar Sesion</string>
 
     <string-array name="ciudades_nacimiento">
         <item> Choose a city</item>

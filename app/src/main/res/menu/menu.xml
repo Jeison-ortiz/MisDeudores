@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_crear"
+            android:icon="@drawable/c_menu_add"
+            android:title="@string/crear" />
+        <item
+            android:id="@+id/nav_buscar"
+            android:icon="@drawable/ic_buscar"
+            android:title="@string/buscar" />
+        <item
+            android:id="@+id/nav_actualizar"
+            android:icon="@drawable/ic_menu_edit"
+            android:title="@string/Actualizar" />
+        <item
+            android:id="@+id/nav_borrar"
+            android:icon="@drawable/ic_menu_borrar"
+            android:title="@string/Borrar" />
+
+        <item
+            android:id="@+id/nav_lista"
+            android:icon="@drawable/ic_table"
+            android:title="@string/lista" />
+    </group>
+</menu>

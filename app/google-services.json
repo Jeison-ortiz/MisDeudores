@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "218912952199",
+    "firebase_url": "https://misdeudores-e0088.firebaseio.com",
+    "project_id": "misdeudores-e0088",
+    "storage_bucket": "misdeudores-e0088.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218912952199:android:e043d4b634ca974ff58d22",
+        "android_client_info": {
+          "package_name": "com.alejoestrada.misdeudores"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218912952199-j8jbbg6hogn9qle45t5gqjugqaedse98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxXAsGpfsJYU-YOkMxqL31nulhv8m2NPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "218912952199-j8jbbg6hogn9qle45t5gqjugqaedse98.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
