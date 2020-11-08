@@ -26,7 +26,8 @@ class BuscarFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding = FragmentBuscarBinding.bind(view)
-        binding.nombreBuscarEditText.setOnClickListener {
+
+        binding.button.setOnClickListener {
             val nombre = binding.nombreBuscarEditText.text.toString()
 
             val deudorDAO: DeudorDAO = MisDeudores.database.DeudorDAO()

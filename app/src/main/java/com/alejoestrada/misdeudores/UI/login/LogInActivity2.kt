@@ -11,9 +11,10 @@ import com.alejoestrada.misdeudores.UI.Boton.BotonActivity
 import com.alejoestrada.misdeudores.UI.registro.RegistroActivity
 import com.alejoestrada.misdeudores.data.database.dao.UsuarioDAO
 import kotlinx.android.synthetic.main.activity_log_in2.*
-import kotlinx.android.synthetic.main.activity_registro.*
 
 class LogInActivity2 : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in2)
@@ -28,14 +29,17 @@ class LogInActivity2 : AppCompatActivity() {
 
         login_button.setOnClickListener {
 
-            val correoUser = correo_edit_text.text.toString()
-            val contrasenaUser = password_edit_text.text.toString()
+            var correoUser = usuario_edit_text?.text.toString()
+            val contrasenaUser = password_edit_text?.text.toString()
 
             val usuarioDAO: UsuarioDAO = MisDeudores.database2.UsuarioDAO()
             val usuario = usuarioDAO.getCorreo(correoUser)
 
+
+//            Toast.makeText(this, "el usuario es ${usuario.correo}  la contrasena es : ${usuario.contrasena}", Toast.LENGTH_SHORT).show()
+
             if (usuario != null) {
-                if (contrasenaUser == usuario.contrasena && correoUser == usuario.correo) {
+                if (contrasenaUser == usuario.contrasena.toString() && correoUser == usuario.correo.toString()) {
                     val intent = Intent(this, BotonActivity::class.java)
 
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK or FLAG_ACTIVITY_CLEAR_TASK)

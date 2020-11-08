@@ -10,7 +10,7 @@ data class Usuario(
     @ColumnInfo(name = "nombre") val nombre: String? = null,
     @ColumnInfo(name = "correo") val correo: String? = null,
     @ColumnInfo(name = "telefono") val telefono: String? = null,
-    @ColumnInfo(name = "contrasena") val contrasena: String? = null,
+    @ColumnInfo(name = "contrasena") val contrasena: String? = null
 )
 
 
