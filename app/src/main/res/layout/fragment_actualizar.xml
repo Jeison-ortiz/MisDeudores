@@ -33,7 +33,8 @@
             android:id="@+id/telefono_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/telefono" />
+            android:hint="@string/telefono"
+            android:inputType="number|text" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -45,6 +46,7 @@
             android:id="@+id/valor_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/Cantidad" />
+            android:hint="@string/Cantidad"
+            android:inputType="number|text" />
     </com.google.android.material.textfield.TextInputLayout>
 </LinearLayout>

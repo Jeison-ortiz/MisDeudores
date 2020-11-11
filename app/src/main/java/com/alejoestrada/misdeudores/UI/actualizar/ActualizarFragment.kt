@@ -51,6 +51,9 @@ class ActualizarFragment : Fragment() {
 
                 deudorDAO.updateDeudor(deudor)
                 isSearching = true
+                binding.nombreBuscarEditText.text = null
+                binding.telefonoEditText.text = null
+                binding.valorEditText.text = null
                 binding.modificarButton.text = getString(R.string.buscar)
             }
         }

@@ -28,6 +28,6 @@
     <fragment
         android:id="@+id/nav_lista"
         android:name="com.alejoestrada.misdeudores.UI.Lista.ListaFragment"
-        android:label="fragment_lista"
+        android:label="@string/lalista"
         tools:layout="@layout/fragment_lista" />
 </navigation>

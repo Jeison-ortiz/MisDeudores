@@ -16,7 +16,7 @@ import com.alejoestrada.misdeudores.databinding.FragmentListaBinding
 class ListaFragment : Fragment() {
 
     private lateinit var binding: FragmentListaBinding
-    var listDeudores: List<Deudor> = emptyList()
+    var listDeudores: List<Deudor> = emptyList()  // lista de deudores vacia
 
 
     override fun onCreateView(
@@ -29,17 +29,23 @@ class ListaFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding = FragmentListaBinding.bind(view)
+        val deudorDAO = MisDeudores.database.DeudorDAO()   //cargar la lista; instancia del dao
+        listDeudores = deudorDAO.getDeudores()
         //
         binding.deudoresRecyclerView.layoutManager =
-            LinearLayoutManager(context, RecyclerView.VERTICAL, false)
+            LinearLayoutManager(
+                context,
+                RecyclerView.VERTICAL,
+                false
+            )  // para la vista como estara la info
         binding.deudoresRecyclerView.setHasFixedSize(true) // para que el tamaño sea constante
 
-        val deudoresRVAdapter = DeudoresRVAdapter(listDeudores as ArrayList<Deudor>)
+        val deudoresRVAdapter =
+            DeudoresRVAdapter(listDeudores as ArrayList<Deudor>)  //damos lista al adapter
 
-        binding.deudoresRecyclerView.adapter = deudoresRVAdapter
+        binding.deudoresRecyclerView.adapter =
+            deudoresRVAdapter  // les damos al recyvler view la lista
 
-        val deudorDAO = MisDeudores.database.DeudorDAO()
-        listDeudores = deudorDAO.getDeudores()
 
         deudoresRVAdapter.notifyDataSetChanged() // se hace para notificar que cambiaron los datos porque se envio una lista vacia
     }

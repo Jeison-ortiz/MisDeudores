@@ -11,7 +11,7 @@ import com.alejoestrada.misdeudores.databinding.DeudoresItemBinding
 // desde el fragmento le mandamos la lista con los deudores,  el tipo es Arraylist de tipo deudor
 
 // hereda de RecyclerView.Adapter y se le dice cual es el adapter
-class DeudoresRVAdapter(var deudoresList: ArrayList<Deudor>) :
+class DeudoresRVAdapter(var deudoresList: ArrayList<Deudor>) :   //llega lista con deudores
     RecyclerView.Adapter<DeudoresRVAdapter.DeudoresViewHolder>() {
 
     // paren es el papa que lo contiene, retorna un DeudoresViewHolder lo que esta despues de :

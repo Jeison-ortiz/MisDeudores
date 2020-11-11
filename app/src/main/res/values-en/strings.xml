@@ -21,17 +21,19 @@
     <string name="study">Study</string>
     <string name="dia_de_nacimiento">Birthday</string>
     <string name="fecha">Date</string>
-    <string name="digite_nombre">Nombre</string>
-    <string name="Deuda">cantidad</string>
-    <string name="Crear">crear</string>
-    <string name="Cantidad">cantidad</string>
-    <string name="Guardar">guardar</string>
-    <string name="buscar">Buscar</string>
-    <string name="crear">Crear</string>
-    <string name="Actualizar">actualizar</string>
-    <string name="Borrar">borrar</string>
-    <string name="lista">Lista</string>
-    <string name="sesion">Iniciar Sesion</string>
+    <string name="digite_nombre">Name</string>
+    <string name="Deuda">Quantity</string>
+    <string name="Crear">Create</string>
+    <string name="Cantidad">Quantity</string>
+    <string name="Guardar">Save</string>
+    <string name="buscar">Search</string>
+    <string name="crear">Create</string>
+    <string name="Actualizar">Update</string>
+    <string name="Borrar">Erase</string>
+    <string name="lista">List</string>
+    <string name="sesion">Log In</string>
+    <string name="campo">There is an empty space, please fill out</string>
+    <string name="lalista">Debtors List</string>
 
     <string-array name="ciudades_nacimiento">
         <item> Choose a city</item>

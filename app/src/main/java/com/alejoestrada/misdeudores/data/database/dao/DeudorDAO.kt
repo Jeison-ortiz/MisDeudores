@@ -21,4 +21,7 @@ interface DeudorDAO {
     @Query("SELECT * FROM tabla_deudor") //  cargaTable
     fun getDeudores(): List<Deudor>
 
+    //@Query("SELECT nombre,valor FROM tabla_deudor") //  cargaTable
+    //fun getDeudores(): List<Deudor>
+
 }

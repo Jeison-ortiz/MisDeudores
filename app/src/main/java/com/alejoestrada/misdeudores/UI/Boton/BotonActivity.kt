@@ -1,5 +1,6 @@
 package com.alejoestrada.misdeudores.UI.Boton
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -26,5 +27,12 @@ class BotonActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+    }
+
+    override fun onBackPressed() {
+        val exit = Intent(Intent.ACTION_MAIN)
+        exit.addCategory(Intent.CATEGORY_HOME)
+        startActivity(exit)
+        finish()
     }
 }
